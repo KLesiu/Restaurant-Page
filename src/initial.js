@@ -14,5 +14,6 @@ const buildBasicLayout=()=>{
     main.appendChild(h1Main)
     main.appendChild(sectionMenu)
     container.appendChild(main)
+    console.log("git")
 }
 export default buildBasicLayout
