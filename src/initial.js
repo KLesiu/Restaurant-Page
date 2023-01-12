@@ -11,9 +11,10 @@ const buildBasicLayout=()=>{
     const sectionMenu=document.createElement("section")
     sectionMenu.classList.add("menu")
     const h1Main=document.createElement("h1")
+    h1Main.innerText="Information"
     main.appendChild(h1Main)
     main.appendChild(sectionMenu)
     container.appendChild(main)
-    console.log("git")
+    
 }
 export default buildBasicLayout

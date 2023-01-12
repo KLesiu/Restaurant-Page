@@ -8,7 +8,6 @@ body{
     background-color: black;
     font-family: 'Quicksand', sans-serif;
     height: 1300px;
-    width: 100vw;
     padding: 10px;
 }
 .content{
@@ -53,9 +52,46 @@ main h1{
     background-color: rgba(255, 255, 255, 0.011);
     border: 10px solid white;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    min-height: 600px;
+    min-height: 400px;
     width: 90%;
+
+}
+
+.location{
+    background-image: url(img/location.jpg);
+}
+.about-us{
+    background-image: url(img/aboutus.jpg);
+}
+.ourmenu{
+    background-image: url(img/menu.jpg);
+}
+.location,.about-us,.ourmenu{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.179);
+    width: 33%;
+    min-height: 100%;
+}
+.section-glass{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.722);
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+}
+.section-glass:hover{
+    background-color: rgba(0, 0, 0, 0.003);
+    color:black;
 
 }
