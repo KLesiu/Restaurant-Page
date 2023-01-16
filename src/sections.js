@@ -75,7 +75,7 @@ class bookMenu{
 const salamiPizza= new bookMenu(`img/menu1.jpg`,`Pizza Salami`,["cheese","salami","tomato sauce","oregano"])
 const margPizza= new bookMenu('img/menu2.jpg','Pizza Margharita',['cheese','tomatoes','tomato sauce','oregano'])
 const secretPizza= new bookMenu('img/menu3.jpg','Pizza Secret',['cheese','tomato sauce','oregano','secret'])
-const frenchFries= new bookMenu('img/menu4.jpg','French Fries',['potatoes',"ketchup",'salt'])
+const frenchFries= new bookMenu('./img/menu4.jpg','French Fries',['potatoes',"ketchup",'salt'])
 salamiPizza.build();
 margPizza.build();
 secretPizza.build();
