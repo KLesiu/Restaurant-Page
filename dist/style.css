@@ -242,5 +242,17 @@ margin-top: 50px;
     #team-page img{
         width: 89%;
     }
+    #menu-page{
+        padding: 0;
+        width: 95%;
+    }
+    .img-holder{
+        width: 56%;
+        height: 150px;
+    }
+    .components-holder{
+        width:40%;
+        font-size: 10px;
+    }
 
 }
