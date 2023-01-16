@@ -90,7 +90,7 @@ container.appendChild(sectionMenu)
             imgChef.src="img/chef.jpg"
             const divTeamInfo=document.createElement("div")
             divTeamInfo.classList.add("information")
-            divTeamInfo.innerHTML=`<h3>Antonio Camellas</h3> <p>Hello, I am passionate about making pizza! I have done it since I was fourteen yahre old when my grandpa showed me how to make it </p>
+            divTeamInfo.innerHTML=`<h3>Antonio Camellas</h3> <p>Hello, I am passionate about making pizza! I have done it since I was fourteen years old when my grandpa showed me how to make it </p>
             `
             sectionTeam.appendChild(imgChef)
             sectionTeam.appendChild(divTeamInfo)
