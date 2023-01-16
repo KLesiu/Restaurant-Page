@@ -36,9 +36,52 @@ container.appendChild(section)
 sectionMenu.id="menu-page"
 const h1SectionMenu=document.createElement("h1")
 h1SectionMenu.innerText="MENU"
-
-
 sectionMenu.appendChild(h1SectionMenu)
+class bookMenu{
+    constructor(img,name,components){
+        this.img = img
+        this.name=name
+        this.components=components
+    }
+    build(){
+        const menuContainer=document.createElement("div")
+        menuContainer.classList.add("food-holder")
+        const div=document.createElement("div")
+        div.classList.add("img-holder")
+        const img=document.createElement("img")
+        img.src=this.img
+        div.appendChild(img)
+        menuContainer.appendChild(div)
+        const divComponents=document.createElement("div")
+        divComponents.classList.add("components-holder")
+        const h2Components=document.createElement("h2")
+        h2Components.innerText=this.name
+        divComponents.appendChild(h2Components)
+        const ulComponents=document.createElement("ul")
+        ulComponents.classList.add("components")
+        const h3UlComponents=document.createElement("h3")
+        h3UlComponents.innerText="Components"
+        ulComponents.appendChild(h3UlComponents)
+        for(let i=0;i<this.components.length;i++){
+            const li=document.createElement("li")
+            li.innerText=this.components[i]
+            ulComponents.appendChild(li)
+        }
+        divComponents.appendChild(ulComponents)
+        menuContainer.appendChild(divComponents)
+        sectionMenu.appendChild(menuContainer)
+    }
+}
+const salamiPizza= new bookMenu(`img/menu1.jpg`,`Pizza Salami`,["cheese","salami","tomato sauce","oregano"])
+const margPizza= new bookMenu('img/menu2.jpg','Pizza Margharita',['cheese','tomatoes','tomato sauce','oregano'])
+const secretPizza= new bookMenu('img/menu3.jpg','Pizza Secret',['cheese','tomato sauce','oregano','secret'])
+const frenchFries= new bookMenu('img/menu4.jpg','French Fries',['potatoes',"ketchup",'salt'])
+salamiPizza.build();
+margPizza.build();
+secretPizza.build();
+frenchFries.build();
+
+
 container.appendChild(sectionMenu)
         }else{
             const sectionTeam=document.createElement("section")
