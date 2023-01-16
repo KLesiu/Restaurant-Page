@@ -21,6 +21,7 @@ header{
     background-repeat: no-repeat;
     height: 200px;
     margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
     width: 100%;
 }
@@ -149,25 +150,70 @@ margin-top: 50px;
     margin-right: auto;
     min-height: 400px;
     width: 90%;
-    padding: 40px;
+    padding: 100px;
+}
+#menu-page h1{
+    border-bottom: 15px dashed white;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px;
+    text-align: center;
+    padding: 20px;
 }
 .food-holder{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 50%;
+    align-items: center;
     
-    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
     width: 100%;
+}
+.img-holder{
+    border-right: black solid 5px;
+    min-height: 100%;
+    padding: 10px;
+    width: 50%;
 
 }
-.food-holder img{
-    
-   grid-area: 1 1 4 2;
+.img-holder img{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 100%;
     width: 100%;
 }
-.food-holder h2{
-    grid-area: 1 2 2 3;
+.components-holder{
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100%;
+    width: 30%;
+    padding: 4% ;
 }
-.components{
-   grid-area: 2 2 4 3;
+.components-holder h2{
+    width: 100%;
+}
+#team-page{
+    align-items: center;
+    border: 5px solid whitesmoke;
+    display: flex;
+    font-size: 35px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+.information{
+    margin-bottom: 300px;
+    padding: 2%;
+}
+#team-page p{
+    font-size: 20px;
+    margin-top: 50px;
 }

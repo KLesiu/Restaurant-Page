@@ -28,8 +28,19 @@ const buildMainSection=()=>{
             option.innerText=myArrayText[2]
         }
     }))
+    glasses.forEach(el=>el.addEventListener("mouseout",(e)=>{
+        let option=e.target
+        if(option==glasses[0]){
+            option.innerText=""
+        }else if(option==glasses[1]){
+            option.innerText=""
+        }else{
+            option.innerText=""
+        }
+    }))
     
 }
+
 
 export default buildMainSection
 

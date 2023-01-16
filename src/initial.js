@@ -1,6 +1,11 @@
 
 const buildBasicLayout=()=>{
     const container=document.querySelector("#content")
+    const span=document.createElement("span")
+    span.classList.add("material-symbols-outlined")
+    span.innerText="home"
+    span.style="font-size:50px;cursor:pointer;"
+    container.appendChild(span)
     const header=document.createElement("header")
     const glassForHeader=document.createElement("div")
     glassForHeader.classList.add("glass");
